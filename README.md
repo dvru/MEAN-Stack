@@ -1,2 +1,6 @@
 # MEAN-Stack
-MongoDB, Express, Angular, NodeJS
+
+- MongoDB, 
+- Express, 
+- Angular, 
+- NodeJS
