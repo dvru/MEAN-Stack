@@ -2,7 +2,7 @@
 
 Angular Frontend to a NodeJS & Express & MongoDB Backend
 
-MongoDB, Express, Angular,  NodeJS
+- MongoDB, Express, Angular,  NodeJS
 
 - Set up a NodeJS + Express + MongoDB + Angular Application with the help of the Angular CLI
 
