@@ -1,23 +1,22 @@
 # MEAN-Stack
 
-- MongoDB, 
-- Express, 
-- Angular, 
-- NodeJS
+Angular Frontend to a NodeJS & Express & MongoDB Backend
 
-Set up a NodeJS + Express + MongoDB + Angular Application with the help of the Angular CLI
+MongoDB, Express, Angular,  NodeJS
 
-Use NodeJS and Express efficiently
+- Set up a NodeJS + Express + MongoDB + Angular Application with the help of the Angular CLI
 
-Build reusable Components in Angular and create a reactive User Experience with the Tools provided by Angular
+- Use NodeJS and Express efficiently
 
-Connect your NodeJS (or any other language!) backend with your Angular App through Angular’s HttpClient service
+- Build reusable Components in Angular and create a reactive User Experience with the Tools provided by Angular
 
-Provide appropriate endpoints on your Backend, for your Frontend to consume
+- Connect your NodeJS (or any other language!) backend with your Angular App through Angular’s HttpClient service
 
-Add advanced features like file upload and pagination
+- Provide appropriate endpoints on your Backend, for your Frontend to consume
 
-Make your Application more secure by implementing Users, Authentication as well as Authorization
+- Add advanced features like file upload and pagination
 
-Handle Errors gracefully
+- Make your Application more secure by implementing Users, Authentication as well as Authorization
+
+- Handle Errors gracefully
 
