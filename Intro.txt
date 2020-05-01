@@ -2,9 +2,29 @@ What does the MEAN stack mean?
 
 M  
     MongoDB: database, user data, posts, messages
+            - A NoSQL database with stores "Documents" in "Collections
+                (Indtead of "Records" in "tables" as in SQL)
+            - Store application data, (User, products, ...)
+            - Enforces no Data Schema or Relations
+            - Easily connected to Node/Express (NOT to Angular!)
+            - A powerful Database which can easily be integrated into a Node/Express Environment
 E 
     Express: Framework for NodeJS
+            - Server-side code and logic
+            - Based on Node, offers same functionalitues 
+            - MiddleWare based funnel Requests through functions
+            - Includes Routing, view-rendering & more
 A 
-    Angular: Client-Side JavaScript Framework
+    Angular: Client-Side (Browser) JavaScript Framework, allows you to build Single Page Applicatins
+            - Render UI with Dynamic data
+            - hanlde user input
+            - communicate with backedn serices
+            - Provides a mobile-app like user experience 
 N 
-    NodeJS: Sever-Side, authenticating users, core business logic
+    NodeJS: Sever-Side, JavaScript on the server Side   
+            - Listen to Requests and sends resonses 
+            - Execute Server Side logic
+            - Interact with DataBase and Files
+            - Alternative to PHP, Ruby of Rails, Java etc. 
+            - Is rarely used Standalone meaning you use a framework with it
+            
