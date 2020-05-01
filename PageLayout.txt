@@ -1,0 +1,23 @@
+Single-Page-Application:
+
+index.html
+imports/load (script tags)
+Angular / 
+Our Angular app / 
+Re-Renders back to index.html
+
+
+Client(browser) 
+    Angular
+        - presentaion/UI
+        - Single Page Application                      
+
+
+Server 
+    Node, Express, mongoDB
+        - Business logic
+        - persitant data storage
+        - authentication logic
+
+        
+Client(browser) <------Requests/Response(AJAX) Data/JSON Format-------> Server 
