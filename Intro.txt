@@ -3,8 +3,8 @@ What does the MEAN stack mean?
 M  
     MongoDB: database, user data, posts, messages
 E 
-    Express:
+    Express: Framework for NodeJS
 A 
     Angular: Client-Side JavaScript Framework
 N 
-    NodeJS: Sever-Side, authenticating users
+    NodeJS: Sever-Side, authenticating users, core business logic
