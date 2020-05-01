@@ -1,0 +1,10 @@
+What does the MEAN stack mean?
+
+M  
+    MongoDB: database, user data, posts, messages
+E 
+    Express:
+A 
+    Angular: Client-Side JavaScript Framework
+N 
+    NodeJS: Sever-Side, authenticating users
