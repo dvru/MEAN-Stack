@@ -22,3 +22,7 @@ RESTful API
                         RESTful Server(API)
                 /users             /posts           /products
             GET POST DELETE     GET POST PATCH    GET
+
+
+CORS 
+    Cross Origin Resouce Sharing
