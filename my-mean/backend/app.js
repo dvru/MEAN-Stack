@@ -19,10 +19,14 @@ app.use((req, res, next) => {
 })
 
 app.post("/api/posts", (req, res, next) => {
-  console.log();
+  const post = req.body;
+  console.log(post);
+  res.status(201).json({
+    message: 'Posts added Successfully'
+  });
 });
 
-app.use("/api/posts", (req, res, next) => {
+app.get("/api/posts", (req, res, next) => {
     const posts = [
       { id: 'sfsffd',
         title: 'First server side post',
