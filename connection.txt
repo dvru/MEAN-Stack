@@ -1,0 +1,24 @@
+Ways of Connecting Node + Angular
+
+1
+    - Node App Serves Angular SPA
+    - Nose (Express) handles incoming requests
+    - requests targeting "/" path return Angular SPA
+
+2
+    - Two Seperated Servers
+    - Node (Express) handles incoming requests
+    - Angular SPA sereved from seperate static host
+
+In both Cases: Logically Seperated Apps
+
+
+RESTful API
+    Representation State Transfer 
+    - Server(Node)
+    - Client (Browser/Angular)
+    - Stateless Backends
+
+                        RESTful Server(API)
+                /users             /posts           /products
+            GET POST DELETE     GET POST PATCH    GET
