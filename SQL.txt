@@ -1,0 +1,15 @@
+NoSQL bs SQL
+
+NoSQL 
+    MongoDb, CouchDB
+    Enforces no Data schema
+    Less focused on relations
+    "Independent documents"
+    great for: Logs, orders, (chat) messages
+
+SQL
+    MySql, MS SQL
+    Enforces a Strict Data schema
+    relations are core feature
+    records are related
+    great for: shopping carts, contacts, networks
