@@ -1,10 +1,21 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+
+const Post = require('./models/post');
 
 const app = express();
 
-app.use(bodyParser.json());
+mongoose.connect("mongodb+srv://damini:NHV0TxJsTt9QC8xu@cluster0-86cg6.mongodb.net/test?retryWrites=true&w=majority", { useUnifiedTopology: true, useNewUrlParser: true })
+  .then(() => {
+    console.log('Connected to database!')
+  })
+  .catch(() => {
+    console.log('Connection Failed!')
+  });
 
+app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
@@ -19,7 +30,10 @@ app.use((req, res, next) => {
 })
 
 app.post("/api/posts", (req, res, next) => {
-  const post = req.body;
+  const post = new Post({
+    title: req.body.title,
+    content: req.body.content
+  });
   console.log(post);
   res.status(201).json({
     message: 'Posts added Successfully'
