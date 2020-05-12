@@ -10,7 +10,7 @@ Angular Frontend to a NodeJS & Express & MongoDB Backend
 
 - Build reusable Components in Angular and create a reactive User Experience with the Tools provided by Angular
 
-- Connect your NodeJS (or any other language!) backend with your Angular App through Angular’s HttpClient service
+- Connect your NodeJS backend with your Angular App through Angular’s HttpClient service
 
 - Provide appropriate endpoints on your Backend, for your Frontend to consume
 
@@ -18,5 +18,5 @@ Angular Frontend to a NodeJS & Express & MongoDB Backend
 
 - Make your Application more secure by implementing Users, Authentication as well as Authorization
 
-- Handle Errors gracefully
+- Handle Errors
 
