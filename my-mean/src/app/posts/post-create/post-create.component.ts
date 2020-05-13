@@ -4,6 +4,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { PostsService } from '../posts.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Post } from '../post.model';
+import { mimeType } from './mime-type.validator';
 
 
 @Component({
@@ -27,11 +28,14 @@ export class PostCreateComponent implements OnInit{
 
   ngOnInit(){
     this.form = new FormGroup({
-      'title': new FormControl(null, {
+      title: new FormControl(null, {
         validators: [Validators.required, Validators.minLength(3)]
       }),
-      'content': new FormControl(null, {validators: [Validators.required]}),
-      'image': new FormControl(null, {validators: [Validators.required]})
+      content: new FormControl(null, {validators: [Validators.required]}),
+      image: new FormControl(null, {
+        validators: [Validators.required],
+        asyncValidators: [mimeType]
+      })
       });
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       if(paramMap.has('postId')) {
@@ -59,13 +63,13 @@ export class PostCreateComponent implements OnInit{
 
   onImagePicked(event: Event) {
     const file = (event.target as HTMLInputElement).files[0];
-    this.form.patchValue({iamge:file});
+    this.form.patchValue({image: file});
     this.form.get('image').updateValueAndValidity();
     const reader = new FileReader();
     reader.onload = () => {
-      this.imagePreview = reader.result as string
+      this.imagePreview = reader.result as string;
     };
-    reader.readAsDataURL(file)
+    reader.readAsDataURL(file);
   }
 
   onSavePost(){
