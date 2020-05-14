@@ -1,4 +1,4 @@
-NoSQL bs SQL
+NoSQL bs SQL:
 
 NoSQL 
     MongoDb, CouchDB

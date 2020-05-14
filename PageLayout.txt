@@ -2,8 +2,7 @@ Single-Page-Application:
 
 index.html
 imports/load (script tags)
-Angular / 
-Our Angular app / 
+Angular / Our Angular app / 
 Re-Renders back to index.html
 
 
@@ -18,6 +17,7 @@ Server
         - Business logic
         - persitant data storage
         - authentication logic
+
 
         
 Client(browser) <------Requests/Response(AJAX) Data/JSON Format-------> Server 
