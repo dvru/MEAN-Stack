@@ -78,7 +78,7 @@ router.get("", (req, res, next) => {
     }
     postQuery
     .then(documents => {
-      fetchedPosts = document;
+      fetchedPosts = documents;
       return Post.count();
     })
     .then(count => {
