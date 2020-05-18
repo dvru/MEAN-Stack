@@ -9,7 +9,7 @@ const userRoutes = require("./routes/user");
 
 const app = express();
 
-mongoose.connect("mongodb+srv://damini:NHV0TxJsTt9QC8xu@cluster0-86cg6.mongodb.net/node-angular?retryWrites=true", { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
+mongoose.connect("mongodb+srv://damini:NHV0TxJsTt9QC8xu@cluster0-86cg6.mongodb.net/node-angular", { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
   .then(() => {
     console.log('Connected to database!')
   })
@@ -17,7 +17,7 @@ mongoose.connect("mongodb+srv://damini:NHV0TxJsTt9QC8xu@cluster0-86cg6.mongodb.n
     console.log('Connection Failed!')
   });
 
-  
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use("/images", express.static(path.join("backend/images")));
