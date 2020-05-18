@@ -5,5 +5,6 @@ templateUrl: './login.component.html'
 })
 
 export class LoginComponent {
+  isLoading = false;
 
 }
