@@ -72,7 +72,8 @@ router.get("", (req, res, next) => {
     const postQuery = Post.find();
     if (pageSize && currentPage) {
       postQuery
-      .skip(pageSize * (currentPage + 1));
+      .skip(pageSize * (currentPage - 1))
+      .limit(pageSize);
     }
     postQuery.then(documents => {
       res.status(200).json({
