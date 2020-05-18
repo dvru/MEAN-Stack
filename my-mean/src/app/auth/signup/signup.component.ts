@@ -9,7 +9,7 @@ styleUrls: ['./signup.component.css']
 export class SignupComponent {
   isLoading = false;
 
-  onSignUp(form: NgForm) {
+  onSignup(form: NgForm) {
     console.log(form.value)
   }
 
