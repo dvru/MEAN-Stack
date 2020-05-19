@@ -65,9 +65,11 @@ router.put(
     _id: req.body.id,
     title: req.body.title,
     content: req.body.content,
-    imagePath: imagePath
+    imagePath: imagePath,
+    creator: req.userId.userId
   })
-  Post.updateOne({ _id: req.params.id, creator: req.userData.userId }, post).then(result => {
+  Post.updateOne({ _id: req.params.id, creator: req.userData.userId },
+    post).then(result => {
     if (result.nModified > 0) {
       res.status(200).json({message: "Update Successful!"})
     } else {
