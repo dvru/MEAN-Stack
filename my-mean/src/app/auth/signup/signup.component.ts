@@ -19,5 +19,4 @@ export class SignupComponent {
     this.isLoading = true;
     this.authServive.createUser(form.value.email, form.value.password)
   }
-
 }
