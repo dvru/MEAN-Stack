@@ -1,7 +1,7 @@
 const Post = require('../models/post');
 
 // create posts
-exports.createPosts = (req, res, next) => {
+exports.createPost = (req, res, next) => {
   const url = req.protocol + '://' + req.get("host");
   const post = new Post({
     title: req.body.title,
@@ -38,7 +38,7 @@ const post = new Post ({
   title: req.body.title,
   content: req.body.content,
   imagePath: imagePath,
-  creator: req.userId.userId
+  creator: req.userData.userId
 })
 Post.updateOne({ _id: req.params.id, creator: req.userData.userId },
   post).then(result => {
